@@ -13,7 +13,7 @@ class PolyButton: UIButton {
     /// The path outlining the button.
     var bezierPath: UIBezierPath = UIBezierPath()
     
-    /// Button action
+    /// Button action - Only use if you want the button event target to be the button itself.
     var action: ((AnyObject?) -> ())? = nil
     
     init(points: [CGPoint], color: UIColor, frame: CGRect) {
