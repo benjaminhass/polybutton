@@ -20,7 +20,7 @@ var p3 = CGPoint(x: 100, y: 150.0)
 ### Initialize with points, color, and bounds.
 
 ```swift
-var triangle = PolyButton(points: [p1,p2,p3,], color: UIColor.greenColor(), frame: self.view.bounds)
+var triangle = PolyButton(points: [p1,p2,p3], color: UIColor.greenColor(), frame: self.view.bounds)
 ```
 
 ### Add an action, if desired.
