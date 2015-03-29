@@ -30,7 +30,7 @@ func didPressTriangle(sender: AnyObject?) {
  println("Triangle")
 }
 
-triangle.action = didPressTriangle
+triangle.addTarget(self, action: "didPressTriangle:", forControlEvents: UIControlEvents.TouchUpInside)
 ```
 
 ### Add the button as a subview to the parent view.
