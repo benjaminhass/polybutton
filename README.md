@@ -11,7 +11,7 @@ Usage:
 Copy PolyButtons.swift into your project.
 1. Create the vertices of the button.
 
-```
+```swift
 var p1 = CGPoint(x: 200, y: 50.0)
 var p2 = CGPoint(x: 300, y: 150.0)
 var p3 = CGPoint(x: 100, y: 150.0)
@@ -28,11 +28,12 @@ var triangle = PolyButton(points: [p1,p2,p3,], color: UIColor.greenColor(), fram
 func didPressTriangle(sender: AnyObject?) {
  println("Triangle")
 }
-```
 
-```
 triangle.action = didPressTriangle
 ```
 
 4. Add the button as a subview to the parent view.
+
+```
 self.view.addSubview(triangle)
+```
