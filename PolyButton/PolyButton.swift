@@ -13,6 +13,9 @@ class PolyButton: UIButton {
     /// The path outlining the button.
     var bezierPath: UIBezierPath = UIBezierPath()
     
+    /// Button action
+    var action: ((AnyObject?) -> ())? = nil
+    
     init(points: [CGPoint], color: UIColor, frame: CGRect) {
         super.init()
         
@@ -43,7 +46,7 @@ class PolyButton: UIButton {
     }
     
     func buttonAction(sender: UIButton) {
-        println("Button pressed")
+        action?(sender)
     }
     
     required init(coder aDecoder: NSCoder) {

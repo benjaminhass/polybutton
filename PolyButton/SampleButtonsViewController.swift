@@ -18,6 +18,7 @@ class SampleButtonsViewController: UIViewController {
         var p3 = CGPoint(x: 100, y: 150.0)
         
         var triangle = PolyButton(points: [p1,p2,p3,], color: UIColor.greenColor(), frame: self.view.bounds)
+        triangle.action = didPressTriangle
         
         var p4 = CGPoint(x: 150.0, y: 200.0)
         var p5 = CGPoint(x: 250.0, y: 200.0)
@@ -25,6 +26,7 @@ class SampleButtonsViewController: UIViewController {
         var p7 = CGPoint(x: 150.0, y: 300.0)
         
         var square = PolyButton(points: [p4,p5,p6,p7], color: UIColor.redColor(), frame: self.view.bounds)
+        square.action = didPressSquare
         
         var p8 = CGPoint(x: 200.0, y: 350.0)
         var p9 = CGPoint(x: 105.0, y: 419.0)
@@ -33,12 +35,24 @@ class SampleButtonsViewController: UIViewController {
         var p12 = CGPoint(x: 295.0, y: 419.0)
         
         var pentagon = PolyButton(points: [p8,p9,p10,p11,p12], color: UIColor.blueColor(), frame: self.view.bounds)
+        pentagon.action = didPressPentagon
         
         self.view.addSubview(triangle)
         self.view.addSubview(square)
         self.view.addSubview(pentagon)
     }
     
+    func didPressTriangle(sender: AnyObject?) {
+        println("Triangle")
+    }
+    
+    func didPressSquare(sender: AnyObject?) {
+        println("Square")
+    }
+    
+    func didPressPentagon(sender: AnyObject?) {
+        println("Pentagon")
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
