@@ -1,7 +1,7 @@
 # polybutton
-Swift class for creating polygonal buttons.
+Swift class for creating polygon buttons in iOS.
 
-Create triangle, square, pentagon, and any other shape you like!
+Create triangle buttons, square buttons, pentagon buttons, and any other shape you like!
 
 ![Sample_Buttons](https://github.com/benjaminhass/polybutton/blob/master/Screenshots/Sample_Poly_Buttons.png)
 
