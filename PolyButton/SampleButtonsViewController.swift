@@ -17,7 +17,7 @@ class SampleButtonsViewController: UIViewController {
         var p2 = CGPoint(x: 300, y: 150.0)
         var p3 = CGPoint(x: 100, y: 150.0)
         
-        var triangle = PolyButton(points: [p1,p2,p3,], color: UIColor.greenColor(), frame: self.view.bounds)
+        var triangle = PolyButton(points: [p1,p2,p3], color: UIColor.greenColor(), frame: self.view.bounds)
         triangle.addTarget(self, action: "didPressTriangle:", forControlEvents: UIControlEvents.TouchUpInside)
 
         var p4 = CGPoint(x: 150.0, y: 200.0)
