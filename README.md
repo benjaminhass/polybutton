@@ -5,23 +5,25 @@ Create triangle, square, and other shape you like buttons in iOS.
 
 ![Sample_Buttons](https://github.com/benjaminhass/polybutton/blob/master/Screenshots/Sample_Poly_Buttons.png)
 
-Usage:
-
+##Installation
 Copy PolyButtons.swift into your project.
-## Create the vertices of the button.
+
+##Usage
+
+### Create the vertices of the button.
 
 ```swift
 var p1 = CGPoint(x: 200, y: 50.0)
 var p2 = CGPoint(x: 300, y: 150.0)
 var p3 = CGPoint(x: 100, y: 150.0)
 ```
-## Initialize with points, color, and bounds.
+### Initialize with points, color, and bounds.
 
 ```swift
 var triangle = PolyButton(points: [p1,p2,p3,], color: UIColor.greenColor(), frame: self.view.bounds)
 ```
 
-## Add an action, if desired.
+### Add an action, if desired.
 
 ```swift
 func didPressTriangle(sender: AnyObject?) {
@@ -31,7 +33,7 @@ func didPressTriangle(sender: AnyObject?) {
 triangle.action = didPressTriangle
 ```
 
-## Add the button as a subview to the parent view.
+### Add the button as a subview to the parent view.
 
 ```swift
 self.view.addSubview(triangle)
